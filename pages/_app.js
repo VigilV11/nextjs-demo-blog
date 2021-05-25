@@ -1,4 +1,6 @@
 import '../styles/globals.scss';
+import Head from 'next/head';
+import Layout from '../components/layout/layout';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -8,7 +10,9 @@ function MyApp({ Component, pageProps }) {
         <meta name='description' content='A NextJS Demo Blog' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

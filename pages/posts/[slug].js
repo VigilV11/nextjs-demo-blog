@@ -1,10 +1,9 @@
-import styles from '../../styles/Home.module.css';
+import PostContent from '../../components/posts/post-detail/post-content';
 
 export default function PostDetailPage() {
   return (
     <>
-      <Hero />
-      <FeaturedPosts />
+      <PostContent />
     </>
   );
 }
