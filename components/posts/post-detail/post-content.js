@@ -1,5 +1,6 @@
 import styles from './post-content.module.scss';
 import PostHeader from './post-header';
+import ReactMarkdown from 'react-markdown';
 
 const DUMMY_POST = {
   title: 'sample post',
@@ -16,7 +17,8 @@ function PostContent() {
         title={DUMMY_POST.title}
         image={`/images/posts/sample/sample_image.png`}
       />
-      {DUMMY_POST.content}
+
+      <ReactMarkdown>{DUMMY_POST.content}</ReactMarkdown>
     </article>
   );
 }
