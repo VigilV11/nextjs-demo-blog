@@ -10,8 +10,8 @@ function PostItem(props) {
     day: 'numeric',
   });
 
-  //   const imagePath = `/images/posts/${slug}/${image}`;
-  const imagePath = `/images/posts/sample/sample_image.png`;
+  const imagePath = `/images/posts/${slug}/${image}`;
+
   return (
     <li className={styles.post}>
       <Link href={`/posts/${slug}`}>
